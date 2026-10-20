@@ -1,8 +1,9 @@
-# TGFI — Trilateral Geoeconomic Fragmentation Index
+# AI Agent Orchestration — TGFI geoeconomic signal pipeline
 
-An unattended LLM pipeline that monitors 11 think-tank and research sources, extracts structured claims about
-China–US, China–EU and US–EU relations, detects when sources flip position or disagree, and publishes
-analyst-style briefs to an editorial dashboard.
+An unattended pipeline of orchestrated LLM workers that monitors 11 think-tank and research sources, extracts
+structured claims about China–US, China–EU and US–EU relations, detects when sources flip position or disagree,
+and publishes analyst-style briefs to an editorial dashboard. Three Claude roles (extractor, analyst, classifier)
+are scheduled by Vercel cron and coordinated through a PostgreSQL job queue.
 
 Built solo for the HKUST Center for Macro-Finance & Geoeconomics (Feb–May 2026). TypeScript / Next.js 16 on
 Vercel, Neon serverless PostgreSQL, Claude Haiku 4.5 + Sonnet 4.5.
